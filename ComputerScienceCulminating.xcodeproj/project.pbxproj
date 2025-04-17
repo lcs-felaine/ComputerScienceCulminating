@@ -6,17 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		662DFAA92DAF081E00EA98E8 /* ComputerScienceCulminatingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662DFAA62DAF081E00EA98E8 /* ComputerScienceCulminatingApp.swift */; };
+		662DFAAA2DAF081E00EA98E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662DFAA72DAF081E00EA98E8 /* ContentView.swift */; };
+		662DFAAB2DAF081E00EA98E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 662DFAA32DAF081E00EA98E8 /* Preview Assets.xcassets */; };
+		662DFAAC2DAF081E00EA98E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 662DFAA52DAF081E00EA98E8 /* Assets.xcassets */; };
+		662DFAB22DAF097600EA98E8 /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662DFAB12DAF096F00EA98E8 /* QuizViewModel.swift */; };
+		662DFAB42DAF098100EA98E8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662DFAB32DAF097B00EA98E8 /* MapView.swift */; };
+		662DFAB62DAF098D00EA98E8 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662DFAB52DAF098500EA98E8 /* MapViewModel.swift */; };
+		662DFAB92DAF09D700EA98E8 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662DFAB82DAF09C700EA98E8 /* Questions.swift */; };
+		662DFABB2DAF09EE00EA98E8 /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662DFABA2DAF09DB00EA98E8 /* Outcome.swift */; };
+		662DFABD2DAF12B600EA98E8 /* PlaceDecription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662DFABC2DAF125900EA98E8 /* PlaceDecription.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		662DFA922DAF07F900EA98E8 /* ComputerScienceCulminating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComputerScienceCulminating.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		662DFAA32DAF081E00EA98E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		662DFAA52DAF081E00EA98E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		662DFAA62DAF081E00EA98E8 /* ComputerScienceCulminatingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerScienceCulminatingApp.swift; sourceTree = "<group>"; };
+		662DFAA72DAF081E00EA98E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		662DFAB12DAF096F00EA98E8 /* QuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
+		662DFAB32DAF097B00EA98E8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		662DFAB52DAF098500EA98E8 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		662DFAB82DAF09C700EA98E8 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		662DFABA2DAF09DB00EA98E8 /* Outcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outcome.swift; sourceTree = "<group>"; };
+		662DFABC2DAF125900EA98E8 /* PlaceDecription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDecription.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		662DFA942DAF07F900EA98E8 /* ComputerScienceCulminating */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ComputerScienceCulminating;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		662DFA8F2DAF07F900EA98E8 /* Frameworks */ = {
@@ -32,7 +47,7 @@
 		662DFA892DAF07F900EA98E8 = {
 			isa = PBXGroup;
 			children = (
-				662DFA942DAF07F900EA98E8 /* ComputerScienceCulminating */,
+				662DFAA82DAF081E00EA98E8 /* ComputerScienceCulminating */,
 				662DFA932DAF07F900EA98E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +58,63 @@
 				662DFA922DAF07F900EA98E8 /* ComputerScienceCulminating.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		662DFAA42DAF081E00EA98E8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				662DFAA52DAF081E00EA98E8 /* Assets.xcassets */,
+				662DFAA32DAF081E00EA98E8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		662DFAA82DAF081E00EA98E8 /* ComputerScienceCulminating */ = {
+			isa = PBXGroup;
+			children = (
+				662DFAA62DAF081E00EA98E8 /* ComputerScienceCulminatingApp.swift */,
+				662DFAA42DAF081E00EA98E8 /* Preview Content */,
+				662DFABE2DAFFB3700EA98E8 /* Functions */,
+				662DFAB72DAF099700EA98E8 /* Model */,
+				662DFAB02DAF08CE00EA98E8 /* ViewModel */,
+				662DFAAD2DAF08A300EA98E8 /* View */,
+			);
+			path = ComputerScienceCulminating;
+			sourceTree = "<group>";
+		};
+		662DFAAD2DAF08A300EA98E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				662DFAA72DAF081E00EA98E8 /* ContentView.swift */,
+				662DFAB32DAF097B00EA98E8 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		662DFAB02DAF08CE00EA98E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				662DFAB52DAF098500EA98E8 /* MapViewModel.swift */,
+				662DFAB12DAF096F00EA98E8 /* QuizViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		662DFAB72DAF099700EA98E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				662DFABC2DAF125900EA98E8 /* PlaceDecription.swift */,
+				662DFABA2DAF09DB00EA98E8 /* Outcome.swift */,
+				662DFAB82DAF09C700EA98E8 /* Questions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		662DFABE2DAFFB3700EA98E8 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Functions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +131,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				662DFA942DAF07F900EA98E8 /* ComputerScienceCulminating */,
 			);
 			name = ComputerScienceCulminating;
 			packageProductDependencies = (
@@ -109,6 +178,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				662DFAAB2DAF081E00EA98E8 /* Preview Assets.xcassets in Resources */,
+				662DFAAC2DAF081E00EA98E8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				662DFAA92DAF081E00EA98E8 /* ComputerScienceCulminatingApp.swift in Sources */,
+				662DFAAA2DAF081E00EA98E8 /* ContentView.swift in Sources */,
+				662DFAB42DAF098100EA98E8 /* MapView.swift in Sources */,
+				662DFAB92DAF09D700EA98E8 /* Questions.swift in Sources */,
+				662DFABD2DAF12B600EA98E8 /* PlaceDecription.swift in Sources */,
+				662DFABB2DAF09EE00EA98E8 /* Outcome.swift in Sources */,
+				662DFAB22DAF097600EA98E8 /* QuizViewModel.swift in Sources */,
+				662DFAB62DAF098D00EA98E8 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
