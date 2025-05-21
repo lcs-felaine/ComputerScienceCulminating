@@ -12,6 +12,8 @@ struct Questions {
     let questionText: String
     let option: [String]
     let correctAnswer: String
+    let image: String
+
     
 }
 
@@ -24,35 +26,38 @@ let questionToAnswer : [Questions] = [
                 "Causeway Bay",
                 "Prince Edward",
                 "Po Lam"],
-        correctAnswer: "Price Edward"
+        correctAnswer: "Prince Edward",
+        image: "princeEdward"
     ),
     
     Questions(
         questionText:"Which of the following places appears in the band's song「Sycamore Street」?" ,
         option: ["Tai Kok Tsui",
                 "Choi Hung",
-                "Wong Tai Xin",
+                "Wong Tai Sin",
                 "Diamond Hill"],
-        correctAnswer: "Tai Kok Tsui"
+        correctAnswer: "Tai Kok Tsui",
+        image: "sycamoreStreet"
     ),
     
     Questions(
-        questionText:"Who did LamP wrote the song「Hey Hey Baby for」?" ,
+        questionText:"Who did LamP wrote the song「Hey Hey Baby」for?" ,
         option: ["His dog",
                  "His cat",
                  "His girlfriend",
                  "His old classmate"],
-        correctAnswer: "His girlfriend"
+        correctAnswer: "His girlfriend",
+        image: "heyHeyBaby"
     ),
     
     Questions(
         questionText: "Which of the following places appears in the band’s song「Lower Albert Street」?",
         option: ["Gough Street",
-                "Choi hung",
-                "Diamond hill",
-                "Tin hau"],
-        correctAnswer: "Gough Street"
+                "Choi Hung",
+                "Diamond Hill",
+                "Tin Hau"],
+        correctAnswer: "Gough Street",
+        image: "goughStreet"
     )
-    
     
 ]
