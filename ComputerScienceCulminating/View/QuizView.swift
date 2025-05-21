@@ -20,6 +20,11 @@ struct QuizView: View {
     // Check whether the selected answer is correct
     @State private var isCorrect: Bool = false
     
+    //Pop up control
+    @State private var showPopupScreen: Bool = false
+    
+    var showPopupScreeDisabled = true
+    
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible())
@@ -67,16 +72,29 @@ struct QuizView: View {
             
             Spacer()
             
-            Button {
+           
+            
+            Button("Next Question") {
                 
-                resetGame()
+                showPopupScreen = false // Hide the pop-up
                 
-            } label: {
-                
-                Text("Next Question")
-                    .foregroundColor(.gray)
-                
+                if isCorrect {
+                    resetGame() // Proceed to the next question only if correct
+                }
             }
+            
+            
+            if isCorrect {
+                Text(currentQuestion.description)
+                 .multilineTextAlignment(.center)
+                 .padding()
+                
+            } else {
+                
+                Text("Please try again.")
+               
+            }
+            
             
         }
     }
