@@ -20,11 +20,6 @@ struct QuizView: View {
     // Check whether the selected answer is correct
     @State private var isCorrect: Bool = false
     
-    //Pop up control
-    @State private var showPopupScreen: Bool = false
-    
-
-    var showPopupScreeDisabled = true
 
     
     let columns = [
@@ -39,7 +34,6 @@ struct QuizView: View {
                 .ignoresSafeArea()
             
             VStack {
-                
                 
                 Spacer()
                 
@@ -80,39 +74,32 @@ struct QuizView: View {
                     
                     .padding()
                     
-                    
-                }
+                    }
                 
                 Spacer()
                 
                 
-                
                 Button("Next Question") {
                     
-                    showPopupScreen = false // Hide the pop-up
-                    
-                    if isCorrect {
+                   if isCorrect {
                         resetGame() // Proceed to the next question only if correct
                     }
                     
                 }
                 
-                
-                if isCorrect {
-                    Text(currentQuestion.description)
-                        .multilineTextAlignment(.center)
-                        .padding()
+                if (selectedOption != nil) {
                     
-                } else {
-                    
-                    Text("Please try again.")
-                    
-                    
+                    if isCorrect {
+                        Text(currentQuestion.description)
+                            .multilineTextAlignment(.center)
+                            .padding()
+                        
+                    } else {
+                        
+                        Text("Please try again.")
+                        
+                    }
                 }
-                
-                
-                
-                
             }
         }
     }
@@ -122,6 +109,8 @@ struct QuizView: View {
     func resetGame() {
         
         currentQuestion = questionToAnswer.randomElement()!
+        
+        selectedOption = nil
         
     }
     

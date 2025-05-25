@@ -11,7 +11,7 @@ import SwiftUI
 struct ComputerScienceCulminatingApp: App {
     var body: some Scene {
         WindowGroup {
-            QuizView(questions: questionToAnswer)
+            LandingView()
         }
     }
 }
