@@ -33,76 +33,90 @@ struct QuizView: View {
     ]
     
     var body: some View {
-        VStack {
+        
+        ZStack{
+            Color.lightBlue
+                .ignoresSafeArea()
+            
+            VStack {
                 
-            Spacer()
-            
-            //Question Text
-            Text(currentQuestion.questionText)
-                .font(.headline)
-                .padding()
-            
-            //Question Image
-            Image(currentQuestion.image)
-                .resizable()
-                .scaledToFit()
-                .frame(height: 300)
-            
-            //Option buttons
-            LazyVGrid(columns: columns, spacing: 20) {
-                ForEach(currentQuestion.option, id: \.self) { option in
-                    
-                    Button(option) { // Display the option text as the button label
-                        selectedOption = option
-                        isCorrect = (option == currentQuestion.correctAnswer)
-                    }
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 8)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.5) // Shrink text if it overflows
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    .background(selectedOption == option ? (isCorrect ? Color.green : Color.red) : Color.gray)
-                    .foregroundColor(.white)
+                
+                Spacer()
+                
+                //Question Text
+                Text(currentQuestion.questionText)
+                    .frame(width: 300)
+                    .font(.custom("Baskerville", size: 24))
                     .bold()
-                    .cornerRadius(30)
+                    
+                
+                //Question Image
+                Image(currentQuestion.image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 350)
+                
+                
+                //Option buttons
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(currentQuestion.option, id: \.self) { option in
+                        
+                        Button(option) { // Display the option text as the button label
+                            selectedOption = option
+                            isCorrect = (option == currentQuestion.correctAnswer)
+                        }
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 8)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.5) // Shrink text if it overflows
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .background(selectedOption == option ? (isCorrect ? Color.green : Color.red) : Color.gray)
+                        .foregroundColor(.white)
+                        .font(.custom("Baskerville", size: 20))
+                        .bold()
+                        .cornerRadius(90)
+                        
+                    }
+                    
+                    .padding()
+                    
                     
                 }
-                .padding()
+                
+                Spacer()
                 
                 
-            }
-            
-            Spacer()
-            
-           
-            
-            Button("Next Question") {
                 
-                showPopupScreen = false // Hide the pop-up
+                Button("Next Question") {
+                    
+                    showPopupScreen = false // Hide the pop-up
+                    
+                    if isCorrect {
+                        resetGame() // Proceed to the next question only if correct
+                    }
+                    
+                }
+                
                 
                 if isCorrect {
-                    resetGame() // Proceed to the next question only if correct
+                    Text(currentQuestion.description)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                    
+                } else {
+                    
+                    Text("Please try again.")
+                    
+                    
                 }
                 
-            }
-            
-            
-            if isCorrect {
-                Text(currentQuestion.description)
-                 .multilineTextAlignment(.center)
-                 .padding()
                 
-            } else {
                 
-                Text("Please try again.")
-    
-               
+                
             }
-            
-            
-            
         }
     }
+        
     
     // MARK: Functions
     func resetGame() {

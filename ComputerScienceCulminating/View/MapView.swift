@@ -28,6 +28,7 @@ struct MapView: View {
     
     
     var body: some View {
+        
         Map(){
             Annotation("Gough Street", coordinate: goughStreet) {
                 VStack {
@@ -37,10 +38,11 @@ struct MapView: View {
                         .scaledToFit()
                         .clipShape(RoundedRectangle(cornerRadius: 9))
                     Text("Gough Street")
-                        .font(.headline)
+                        .font(.custom("Times New Roman", size: 20))
                         .foregroundColor(.black)
                     Text("A charming street known for boutique stores and restaurants.")
-                        .font(.subheadline)
+                        .frame(width: 200)
+                        .font(.custom("Times New Roman", size: 15))
                         .foregroundColor(.black)
                 }
                 .padding(8)
@@ -56,10 +58,11 @@ struct MapView: View {
                         .scaledToFit()
                         .clipShape(RoundedRectangle(cornerRadius: 9))
                     Text("Prince Edward")
-                        .font(.headline)
+                        .font(.custom("Times New Roman", size: 20))
                         .foregroundColor(.black)
                     Text("A bustling district famous for its flower market and street food.")
-                        .font(.subheadline)
+                        .frame(width: 200)
+                        .font(.custom("Times New Roman", size: 15))
                         .foregroundColor(.black)
                 }
                 .padding(8)
@@ -75,10 +78,11 @@ struct MapView: View {
                         .scaledToFit()
                         .clipShape(RoundedRectangle(cornerRadius: 9))
                     Text("Tai Kok Tsui")
-                        .font(.headline)
+                        .font(.custom("Times New Roman", size: 20))
                         .foregroundColor(.black)
                     Text("An urban neighborhood with a mix of traditional and modern vibes.")
-                        .font(.subheadline)
+                        .frame(width: 200)
+                        .font(.custom("Times New Roman", size: 15))
                         .foregroundColor(.black)
                 }
                 .padding(8)
@@ -94,10 +98,11 @@ struct MapView: View {
                         .scaledToFit()
                         .clipShape(RoundedRectangle(cornerRadius: 9))
                     Text("Zoo Records")
-                        .font(.headline)
+                        .font(.custom("Times New Roman", size: 20))
                         .foregroundColor(.black)
                     Text("A record store cherished by music enthusiasts.")
-                        .font(.subheadline)
+                        .frame(width: 200)
+                        .font(.custom("Times New Roman", size: 15))
                         .foregroundColor(.black)
                 }
                 .padding(8)
