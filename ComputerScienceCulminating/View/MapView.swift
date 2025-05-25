@@ -29,14 +29,85 @@ struct MapView: View {
     
     var body: some View {
         Map(){
+            Annotation("Gough Street", coordinate: goughStreet) {
+                VStack {
+                    Image("goughStreet")
+                        .resizable()
+                        .frame(width: 70, height: 50)
+                        .scaledToFit()
+                        .clipShape(RoundedRectangle(cornerRadius: 9))
+                    Text("Gough Street")
+                        .font(.headline)
+                        .foregroundColor(.black)
+                    Text("A charming street known for boutique stores and restaurants.")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                }
+                .padding(8)
+                .background(Color.white.opacity(0.75))
+                .cornerRadius(8)
+            }
             
-            Marker("Gough Street",coordinate: goughStreet)
-            Marker("Prince Edward", coordinate: princeEdward)
-            Marker("Tai Kok Tsui", coordinate: taiKokTsui)
-            Marker("Zoo Records", coordinate: zooRecords)
+            Annotation("Prince Edward", coordinate: princeEdward) {
+                VStack {
+                    Image("princeEdward")
+                        .resizable()
+                        .frame(width: 80, height: 50)
+                        .scaledToFit()
+                        .clipShape(RoundedRectangle(cornerRadius: 9))
+                    Text("Prince Edward")
+                        .font(.headline)
+                        .foregroundColor(.black)
+                    Text("A bustling district famous for its flower market and street food.")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                }
+                .padding(8)
+                .background(Color.white.opacity(0.75))
+                .cornerRadius(8)
+            }
+            
+            Annotation("Tai Kok Tsui", coordinate: taiKokTsui) {
+                VStack {
+                    Image("taiKokTsui")
+                        .resizable()
+                        .frame(width: 70, height: 50)
+                        .scaledToFit()
+                        .clipShape(RoundedRectangle(cornerRadius: 9))
+                    Text("Tai Kok Tsui")
+                        .font(.headline)
+                        .foregroundColor(.black)
+                    Text("An urban neighborhood with a mix of traditional and modern vibes.")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                }
+                .padding(8)
+                .background(Color.white.opacity(0.75))
+                .cornerRadius(8)
+            }
+            
+            Annotation("Zoo Records", coordinate: zooRecords) {
+                VStack {
+                    Image("zooRecords")
+                        .resizable()
+                        .frame(width: 80, height: 50)
+                        .scaledToFit()
+                        .clipShape(RoundedRectangle(cornerRadius: 9))
+                    Text("Zoo Records")
+                        .font(.headline)
+                        .foregroundColor(.black)
+                    Text("A record store cherished by music enthusiasts.")
+                        .font(.subheadline)
+                        .foregroundColor(.black)
+                }
+                .padding(8)
+                .background(Color.white.opacity(0.75))
+                .cornerRadius(8)
+            }
         }
+        .ignoresSafeArea(edges: .all)
     }
-}
+        }
 
 #Preview {
     
