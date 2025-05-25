@@ -23,7 +23,9 @@ struct QuizView: View {
     //Pop up control
     @State private var showPopupScreen: Bool = false
     
+
     var showPopupScreeDisabled = true
+
     
     let columns = [
         GridItem(.flexible()),
@@ -32,7 +34,7 @@ struct QuizView: View {
     
     var body: some View {
         VStack {
-            
+                
             Spacer()
             
             //Question Text
@@ -81,6 +83,7 @@ struct QuizView: View {
                 if isCorrect {
                     resetGame() // Proceed to the next question only if correct
                 }
+                
             }
             
             
@@ -92,8 +95,10 @@ struct QuizView: View {
             } else {
                 
                 Text("Please try again.")
+    
                
             }
+            
             
             
         }
