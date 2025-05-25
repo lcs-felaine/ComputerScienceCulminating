@@ -9,24 +9,54 @@ import SwiftUI
 
 struct LandingView: View {
     var body: some View {
-        TabView(selection: Binding.constant(1)) {
-            
-            QuizView(questions: questionToAnswer)
-                .tabItem {
-                    Image(systemName: "questionmark.text.page.rtl") 
+        NavigationView {
+            VStack(spacing: 30) {
+                Spacer()
+                
+                Text("Welcome to My Little Airport's World")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
+                
+                Text("Explore the app by selecting one of the options below:")
+                    .font(.body)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
+                
+                Spacer()
+                
+                //First tab View
+                NavigationLink(destination: QuizView(questions: questionToAnswer)) {
+                    Text("Go to Quiz")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                        .padding(.horizontal, 40)
                 }
-                .tag(1)
-            
-            
-            MapView()
-                .tabItem {
-                   Image(systemName: "map")
+                
+                // Second tab View
+                NavigationLink(destination: MapView()) {
+                    Text("Go to Map")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                        .padding(.horizontal, 40)
                 }
-                .tag(2)
-            
+                
+                Spacer()
+            }
         }
-    }
-}
+           }
+
+        
+        }
 
 
 #Preview {
