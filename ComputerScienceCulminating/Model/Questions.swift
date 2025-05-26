@@ -83,4 +83,3 @@ let questionToAnswer : [Questions] = [
     )
     
 ]
-

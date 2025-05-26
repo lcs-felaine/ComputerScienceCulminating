@@ -19,12 +19,14 @@ struct LandingView: View {
                     Spacer()
                     
                     Text("Welcome to My Little Airport's World")
+                        .foregroundColor(.wine)
                         .font(.custom("Georgia", size: 34))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
                     
                     Text("Explore the app by selecting one of the options below:")
+                        .foregroundColor(.darkBlue)
                         .font(.custom("Georgia", size: 18))
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
@@ -61,8 +63,6 @@ struct LandingView: View {
                 }
             }
         }
-        
-        
     }
 }
 

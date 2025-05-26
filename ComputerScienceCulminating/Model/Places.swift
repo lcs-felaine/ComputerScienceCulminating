@@ -22,7 +22,7 @@ struct Place: Identifiable {
 let places :  [Place] = [
 Place(
     placeName: "Gough Street",
-    songName: "Lower Albert Street",
+    songName: "「Lower Albert Street」",
     description: "Known as 「NoHo」 Gough Street is a trendy spot in Central featuring chic cafes, boutique shops, and a blend of old and new Hong Kong culture.",
     image: "goughStreet",
     coordinate: CLLocationCoordinate2D(
@@ -32,7 +32,7 @@ Place(
 
 Place(
     placeName: "Prince Edward",
-    songName: "Classmate K",
+    songName: "「Classmate K」",
     description: "A bustling district famous for its flower market and street food.",
     image: "princeEdward",
     coordinate: CLLocationCoordinate2D(
@@ -42,7 +42,7 @@ Place(
 
 Place(
     placeName: "Tai Kok Tsui",
-    songName: "Sycamore Street",
+    songName: "「Sycamore Street」",
     description: "An urban neighborhood with a mix of traditional and modern vibes.",
     image: "taiKokTsui",
     coordinate: CLLocationCoordinate2D(
@@ -52,7 +52,7 @@ Place(
 
 Place(
     placeName: "Zoo Records",
-    songName: "Strolling in the Zoo is What Truly Matters",
+    songName: "「Strolling in the Zoo is What Truly Matters」",
     description: "A record store cherished by music enthusiasts.",
     image: "zooRecords",
     coordinate: CLLocationCoordinate2D(
@@ -62,7 +62,7 @@ Place(
 
 Place(
     placeName: "Wong Tai Sin",
-    songName: "20 GB",
+    songName: "「20 GB」",
     description: "Home to the iconic Wong Tai Sin Temple, this area is a spiritual hub where locals and tourists seek blessings and guidance.",
     image: "wongTaiSin",
     coordinate: CLLocationCoordinate2D(
@@ -72,7 +72,7 @@ Place(
 
 Place(
     placeName: "Lai Chi Kok Park",
-    songName: "Lai Chi Kok Park",
+    songName: "「Lai Chi Kok Park」",
     description: "A spacious park in Kowloon, Lai Chi Kok Park features traditional Chinese gardens, sports facilities, and peaceful green spaces for relaxation.",
     image: "laiChiKokPark",
     coordinate: CLLocationCoordinate2D(
@@ -82,7 +82,7 @@ Place(
 
 Place(
     placeName: "Kowlong Park Swimming Pool",
-    songName: "I love Kowlong park swimming pool",
+    songName: "「I love Kowlong park swimming pool」",
     description: "A popular public swimming facility in Kowloon Park, offering indoor and outdoor pools amidst a serene park environment.",
     image: "kowloongParkSwimmingPool",
     coordinate: CLLocationCoordinate2D(
@@ -92,7 +92,7 @@ Place(
 
 Place(
     placeName: "To Kwa Wan",
-    songName: "To Kwa Wan love song",
+    songName: "「To Kwa Wan love song」",
     description: "A historic neighborhood with strong ties to Hong Kong's industrial past, To Kwa Wan is now evolving into a vibrant residential and cultural area.",
     image: "toKwaWan",
     coordinate: CLLocationCoordinate2D(
@@ -102,7 +102,7 @@ Place(
 
 Place(
     placeName: "Hoi Sum Park",
-    songName: "Hoi Sum Park",
+    songName: "「Hoi Sum Park」",
     description: "A charming urban park in To Kwa Wan, Hoi Sum Park provides a tranquil escape with walking paths and playgrounds.",
     image: "hoiSumPark",
     coordinate: CLLocationCoordinate2D(
@@ -112,7 +112,7 @@ Place(
 
 Place(
     placeName: "Connaught Road Central",
-    songName: "We will sleep at Connaught Road Central tonight",
+    songName: "「We will sleep at Connaught Road Central tonight」",
     description: "A major artery in Hong Kong's financial district, Connaught Road Central is lined with skyscrapers, luxury shops, and bustling activity.",
     image: "connaughtRdCentral",
     coordinate: CLLocationCoordinate2D(
@@ -122,7 +122,7 @@ Place(
 
 Place(
     placeName: "Nathan Road",
-    songName: "A night at Nathan Road",
+    songName: "「A night at Nathan Road」",
     description: "Known as the「Golden Mile」 Nathan Road is a vibrant shopping and dining destination, connecting Tsim Sha Tsui to Mong Kok.",
     image: "nathanRd",
     coordinate:  CLLocationCoordinate2D(
@@ -132,7 +132,7 @@ Place(
 
 Place(
     placeName: "Lok Shan Road",
-    songName: "My dear friend Ka Hei",
+    songName: "「My dear friend Ka Hei」",
     description: "Located in To Kwa Wan, Lok Shan Road is a quieter street known for its local eateries and proximity to old-style residential buildings.",
     image: "lokShanRd",
     coordinate: CLLocationCoordinate2D(
@@ -142,7 +142,7 @@ Place(
 
 Place(
     placeName: "Sycamore Street",
-    songName: "Sycamore Street",
+    songName: "「Sycamore Street」",
     description: "A quiet residential street in Tai Kok Tsui, Sycamore Street is lined with older-style buildings and offers a glimpse into the city's history.",
     image: "sycamoreStreet",
     coordinate: CLLocationCoordinate2D(

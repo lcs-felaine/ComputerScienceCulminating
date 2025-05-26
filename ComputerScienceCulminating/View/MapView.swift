@@ -9,6 +9,7 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
+    
     @State private var selectedPlace: Place? // Tracks the selected place
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 22.3193, longitude: 114.1694), // Center of Hong Kong
@@ -22,9 +23,9 @@ struct MapView: View {
                     selectedPlace = place
                 }) {
                     Text(place.placeName)
-                        .font(.caption)
+                        .font(.custom("Georgia", size: 10))
                         .padding(5)
-                        .background(Color.yellow)
+                        .background(Color.lightBlue)
                         .cornerRadius(8)
                         .shadow(radius: 2)
                 }

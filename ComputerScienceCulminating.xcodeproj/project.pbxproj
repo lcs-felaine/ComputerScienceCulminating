@@ -81,10 +81,10 @@
 		662DFAAD2DAF08A300EA98E8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				66FF92F72DE40495007F006D /* PlacesDetailView.swift */,
 				668523832DE37E7200F0F013 /* LandingView.swift */,
 				662DFAA72DAF081E00EA98E8 /* QuizView.swift */,
 				662DFAB32DAF097B00EA98E8 /* MapView.swift */,
+				66FF92F72DE40495007F006D /* PlacesDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

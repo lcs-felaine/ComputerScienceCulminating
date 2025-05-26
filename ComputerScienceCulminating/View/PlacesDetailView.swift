@@ -17,37 +17,27 @@ struct PlaceDetailView: View {
             
             Image(place.image)
                 .resizable()
-                .frame(width: 70, height: 50)
+                .frame(width: 140, height: 110)
                 .scaledToFit()
                 .clipShape(RoundedRectangle(cornerRadius: 9))
             
             Text(place.placeName)
-                .font(.custom("Times New Roman", size: 20))
+                .font(.custom("Times New Roman", size: 50))
                 .foregroundColor(.black)
                 .bold()
             
             Text(place.songName)
-                .font(.custom("Times New Roman", size: 17))
+                .font(.custom("Times New Roman", size: 35))
                 .foregroundColor(.black)
                 .bold()
             
             Text(place.description)
-                .frame(width: 200)
-                .font(.custom("Times New Roman", size: 15))
+                .font(.custom("Times New Roman", size: 25))
                 .foregroundColor(.black)
                 .padding()
         
 
-            Spacer()
-
-            Button("Close") {
-                // Dismiss the sheet (handled automatically in SwiftUI)
-            }
-            .font(.headline)
-            .padding()
-            .background(Color.blue)
-            .foregroundColor(.white)
-            .cornerRadius(10)
+           
         }
         .padding()
     }
@@ -64,5 +54,3 @@ struct PlaceDetailView: View {
         }
     }
 }
-
-
