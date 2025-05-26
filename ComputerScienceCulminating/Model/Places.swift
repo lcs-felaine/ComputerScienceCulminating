@@ -19,7 +19,7 @@ struct Place: Identifiable {
     
 }
 
-let places = [
+let places :  [Place] = [
 Place(
     placeName: "Gough Street",
     songName: "Lower Albert Street",
@@ -134,7 +134,7 @@ Place(
     placeName: "Lok Shan Road",
     songName: "My dear friend Ka Hei",
     description: "Located in To Kwa Wan, Lok Shan Road is a quieter street known for its local eateries and proximity to old-style residential buildings.",
-    image: "lokShanRoad",
+    image: "lokShanRd",
     coordinate: CLLocationCoordinate2D(
         latitude: 22.31714143348229,
         longitude: 114.18913141340478)
